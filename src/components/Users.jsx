@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getUsers } from '../redux/actions';
+import User from './User';
 
 class Users extends React.Component {
+	// eslint-disable-next-line no-useless-constructor
 	constructor(props) {
 		super(props);
 	}
@@ -12,7 +14,14 @@ class Users extends React.Component {
 	}
 
 	render() {
-		return <h2>Soy el componente Users</h2>;
+		return (
+			<>
+				<h2>Soy el componente Users</h2>
+				{this.props.users.map((user) => (
+					<User name={user.name} username={user.username} email={user.email} />
+				))}
+			</>
+		);
 	}
 }
 
