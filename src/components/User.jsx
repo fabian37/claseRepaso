@@ -1,12 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const User = ({ name, username, email }) => {
+const User = ({ name, username, email, id }) => {
 	return (
 		<>
-			<h3>{name}</h3>
-			<p>{username}</p>
-			<p>{email}</p>
-			<hr />
+			<div className="user">
+				<Link to={`/userdetail/${id}`}>
+					<h3>{name}</h3>
+				</Link>
+				<p>{username}</p>
+				<p>{email}</p>
+			</div>
 		</>
 	);
 };

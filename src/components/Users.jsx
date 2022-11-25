@@ -16,10 +16,28 @@ class Users extends React.Component {
 	render() {
 		return (
 			<>
-				<h2>Soy el componente Users</h2>
-				{this.props.users.map((user) => (
-					<User name={user.name} username={user.username} email={user.email} />
-				))}
+				<div className="users">
+					<h2>Soy el componente Users</h2>
+					{console.log(this.props.users)}
+
+					{/* {
+					<User
+						name={this.props.users[0].name}
+						username={this.props.users[0].username}
+						email={this.props.users[0].email}
+					/>
+				} */}
+
+					{this.props.users.map((user) => (
+						<User
+							key={user.id}
+							name={user.name}
+							username={user.username}
+							email={user.email}
+							id={user.id}
+						/>
+					))}
+				</div>
 			</>
 		);
 	}

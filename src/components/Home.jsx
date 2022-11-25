@@ -8,8 +8,10 @@ class Home extends React.Component {
 	render() {
 		return (
 			<>
-				<h1>Estamos en el Home</h1>
-				<p>Bienvienidos al repaso</p>
+				<div className="home">
+					<h1>Estamos en el Home</h1>
+					<p>Bienvienidos al repaso 😎</p>
+				</div>
 			</>
 		);
 	}

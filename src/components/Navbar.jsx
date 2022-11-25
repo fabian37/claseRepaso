@@ -11,8 +11,6 @@ function Navbar(props) {
 			<br />
 
 			<Link to="/users">Users</Link>
-
-			<hr />
 		</nav>
 	);
 }
