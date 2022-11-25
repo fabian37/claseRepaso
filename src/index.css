@@ -183,7 +183,20 @@ input {
 	transition: 0.5s;
 }
 
-.user h3 {
+.newUser {
+	width: 400px;
+	height: 300px;
+	background-color: hsl(244, 38%, 16%);
+	box-shadow: 0 0 0.625rem 0.0625rem rgb(18 20 23 / 25%);
+	border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0px;
+}
+
+.newUser h3 {
 	padding-top: 10px;
 	text-align: center;
 	background-color: hsl(277, 64%, 61%);
@@ -195,7 +208,7 @@ input {
 	color: hsl(0deg, 0%, 100%);
 }
 
-.user h3:hover {
+.newUser h3:hover {
 	background-color: hsl(0deg, 0%, 100%);
 	color: hsl(277, 64%, 61%);
 	transition: 0.5s;
