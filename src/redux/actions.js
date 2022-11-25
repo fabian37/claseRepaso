@@ -1,7 +1,6 @@
 export const GET_USERS = 'GET_USERS';
 export const GET_USER_DETAIL = 'GET_USER_DETAIL';
 export const CREATE_USER = 'CREATE_USER';
-export const GET_NEW_USER = 'GET_NEW_USER';
 
 export const getUsers = () => {
 	return function (dispatch) {
@@ -21,8 +20,4 @@ export const getUserDetail = (id) => {
 
 export const createUser = (user) => {
 	return { type: CREATE_USER, payload: user };
-};
-
-export const getNewUser = () => {
-	return { type: GET_NEW_USER };
 };
