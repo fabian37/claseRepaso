@@ -1,18 +1,17 @@
 body {
 	box-sizing: border-box;
 	font-size: 20px;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	background-color: hsl(243, 36%, 25%);
 	color: hsl(0deg, 0%, 100%);
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	/* -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; */
 }
 .App {
-	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -75,8 +74,18 @@ body {
 	align-items: center;
 	justify-content: center;
 	margin: 20px 0px;
+	animation-name: move;
+	animation-duration: 4s;
 }
 
+@keyframes move {
+	from {
+		margin: 40px 0px;
+	}
+	to {
+		margin: 20px 0px;
+	}
+}
 .user a {
 	display: flex;
 	justify-content: center;
@@ -135,8 +144,13 @@ body {
 	justify-content: center;
 	margin: 20px 0px;
 	gap: 10px;
+	transition: 1s;
 }
 
+.form:hover {
+	width: 425px;
+	box-shadow: 0 0 0.625rem 0.0625rem rgba(195, 0, 255, 0.408);
+}
 .form h2 {
 	margin: 0px 0px 10px;
 	width: 100%;
